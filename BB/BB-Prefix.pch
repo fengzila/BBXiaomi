@@ -1,0 +1,32 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UIViewExt.h"
+    #import "BBFunction.h"
+#endif
+
+#define MY_BANNER_UNIT_ID       @"a15301cb3fa57cf"
+
+#define kDeviceHeight   [UIScreen mainScreen].bounds.size.height
+#define kDeviceWidth    [UIScreen mainScreen].bounds.size.width
+#define kGray           [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1]
+#define kPink           [UIColor colorWithRed:253/255.0 green:97/255.0 blue:151/255.0 alpha:1]
+
+#define kNewUser                @"newUser"
+#define kUserBaseInfoAge        @"age"
+#define kUserBaseInfoHeight     @"height"
+#define kUserBaseInfoWeight     @"weight"
+#define kUserBaseInfoDueDate    @"duedate"
+#define kHasEvaluated           @"hasEvaluated"

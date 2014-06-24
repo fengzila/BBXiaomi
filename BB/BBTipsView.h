@@ -1,0 +1,23 @@
+//
+//  BBTipsView.h
+//  BB
+//
+//  Created by FengZi on 14-1-13.
+//  Copyright (c) 2014年 FengZi. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface BBTipsView : UIView<UITableViewDelegate, UITableViewDataSource>
+{
+@private
+    NSMutableArray      *_data;
+    UITableView         *_tableView;
+}
+
+@property (nonatomic) NSMutableArray *data;
+
+- (id)initWithFrame:(CGRect)frame Data:(NSMutableArray*)data;
+
+- (NSInteger)adaptFrameHeight;
+@end
